@@ -5,7 +5,10 @@ body {
     height: 100vh;
     margin: 0;
     background: #222;
-    font-family: 'Comforter Brush', cursive;
+    /* font-family: 'Comforter Brush', cursive;
+     */
+     font-family: 'Comforter Brush', cursive;
+font-family: 'Fuzzy Bubbles', cursive;
     font-size: 120%;
    
 }
