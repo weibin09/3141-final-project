@@ -4,7 +4,11 @@ let weather ={
         fetch("http://api.openweathermap.org/data/2.5/weather?q="+ city +"&units=imperial&appid="+ this.apikey)
         .then((response)=>response.json())
         // .then((data)=>console.log(data));
-        .then((data)=>this.displayWeather(data));
+        .then((data)=>
+        {
+            this.displayWeather(data)
+            updateMap(data);
+        });
     
     },
 
@@ -37,6 +41,7 @@ let weather ={
     // },
     
     displayWeather: function(data){
+        console.log(data);
         const {name} = data;
         const {icon, description} = data.weather[0];
         const {temp, humidity,feels_like,temp_max,temp_min}= data.main;
@@ -88,9 +93,23 @@ let weather ={
     
 
     
+
+    
     
     
 };
+
+
+function updateMap(data){
+
+    let lat = data.coord.lat;
+    let lon = data.coord.lon;
+    let map = document.querySelector(".map");
+    map.innerHTML = `<iframe width="420px" height="350px" src="https://embed.windy.com/embed2.html?lat=${lat}&lon=${lon}&detailLat=40.676&detailLon=-73.875&width=650&height=450&zoom=5&level=surface&overlay=wind&product=ecmwf&menu=&message=&marker=&calendar=now&pressure=&type=map&location=coordinates&detail=&metricWind=default&metricTemp=default&radarRange=-1" frameborder="0"></iframe>`;
+    console.log(map);
+}
+
+
 
 
 
