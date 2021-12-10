@@ -1,0 +1,166 @@
+*{
+    color: rgb(7, 1, 1);
+    /* background: rgb(7, 200, 243); */
+    
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    /* background: url(https://www.google.com/url?sa=i&url=https%3A%2F%2Funsplash.com%2Fs%2Fphotos%2Fweather&psig=AOvVaw04T2SHWGzZKZVZbZ8a91Dy&ust=1639019959488000&source=images&cd=vfe&ved=0CAsQjRxqFwoTCICWv6Wf0_QCFQAAAAAdAAAAABAe); */
+    /* background-image: url(https://www.google.com/url?sa=i&url=https%3A%2F%2Funsplash.com%2Fs%2Fphotos%2Fweather&psig=AOvVaw04T2SHWGzZKZVZbZ8a91Dy&ust=1639019959488000&source=images&cd=vfe&ved=0CAsQjRxqFwoTCICWv6Wf0_QCFQAAAAAdAAAAABAe); */
+}
+
+body{
+    font-family: 'Comforter Brush', cursive;
+font-family: 'Fuzzy Bubbles', cursive;
+background: url(https://img.freepik.com/free-vector/elegant-cloud-background-blue-sky-design_1017-25503.jpg?size=626&ext=jpg) no-repeat center center fixed ;
+/* background-repeat: no-repeat; */
+/* background-position: center; */
+background-size: cover;
+
+/* background-image: url(https://www.google.com/url?sa=i&url=https%3A%2F%2Funsplash.com%2Fs%2Fphotos%2Fweather&psig=AOvVaw04T2SHWGzZKZVZbZ8a91Dy&ust=1639019959488000&source=images&cd=vfe&ved=0CAsQjRxqFwoTCICWv6Wf0_QCFQAAAAAdAAAAABAe); */
+}
+
+#cityInput, #cityName, #inputContainer,button{
+    margin: 3px;
+padding:5px;
+text-align:center;
+font-size:20px;
+font-weight:bold;
+}
+
+#weatherContainer{
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    /* height: 300px; */
+    width: 1300px;
+    /* border: 5px solid rgba(97, 95, 95, 0.829);     */
+    border-radius: 10px;
+    float: right;
+    
+}
+
+#iconsContainer{
+    position: absolute;
+    /* top: 50%; */
+    left: 50%;
+    margin-right: -50%;
+    margin-top: 10px;
+    transform: translate(-50%, -50%);
+    /* height: 240px; */
+    width: 1200px;    
+    border: 5px solid rgb(31, 82, 82);    
+    border-radius: 10px;
+    margin-top: -200px;
+    margin-left: 155px;
+    float: right;
+}
+
+.icons{
+    display: inline-bock;
+    float: left;
+    /* height: 200px; */
+    width: 190px;
+    margin: 20px;
+    /* border: 5px solid rgb(48, 47, 47); */
+    border-radius: 10px;
+}
+
+.image{
+    height: 140px;
+    width: 100%;
+}
+
+.imgClass{
+    height: 140px;
+    width: 100%;
+}
+
+.weather , .temp, .description{
+    margin: 5px;
+   /*  background-color: rgb(106, 215, 255); */
+    border-radius: 5px;
+    text-align: center;
+    font-weight: bold;
+    
+}
+
+/* .minValues{
+    text-align: center;
+    display: inline-block;
+    border-radius: 5px;
+    height: 25px;
+    width: 85px;
+    margin: 0;
+    margin-bottom: 5px;
+    margin-left: 5px;
+}
+
+
+.maxValues{
+    text-align: center;
+    display: inline-block;
+    border-radius: 5px;
+    height: 25px;
+    width: 85px;
+    margin: 0;
+    margin-bottom: 5px;
+    margin-left: 5px;
+} */
+
+.map{
+
+    background: #eaeaea;
+    padding: 2em;
+    border-radius: 30px;
+    width: 100%;
+    max-width: 420px;
+    margin: 1em;
+    /* max-height: 250px; */
+    margin-top: -550px;
+    position: absolute;
+    /* float: left; */
+    
+
+}
+
+.time
+{
+    margin-top: 560px;
+
+    
+}
+
+button {
+    margin: 0.5em;
+    border-radius: 50%;
+    border: none;
+    height: 46px;
+    width: 46px;
+    outline: none;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+}
+
+input.search_bar {
+    /* border: none; */
+    /* outline: none; */
+    padding: 0.4em 1em;
+    border-radius: 24px;
+    font-family: inherit;
+    font-size: 105%;
+    width: calc(100%-100px);
+    background-color: gray;
+}
+
+
+
+button:hover {
+    background:red;
+}
+
+.gg{
+    width: 100%;
+    /* position: relative;
+    float: left; */
+}
